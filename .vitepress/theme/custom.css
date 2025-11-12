@@ -1,0 +1,13 @@
+.vp-doc div[class*="language-"] {
+  overflow-y: visible;
+}
+.vp-doc div[class*="language-"] > pre {
+  overflow-y: hidden !important;
+  overflow-x: auto;
+  max-height: none;
+}
+
+.vp-doc div[class*="language-"] > pre::-webkit-scrollbar {
+  width: 0;
+  height: 8px;
+}
