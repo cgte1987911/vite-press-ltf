@@ -5,8 +5,7 @@ import { withSidebar } from 'vitepress-sidebar';
 
 // Configure base path for deployment
 // Change this to your deployment path, e.g., '/vite-press-ltf/' for GitHub Pages
-const BASE_PATH = '/vite-press-ltf/';
-
+const BASE_PATH = process.env.GITHUB_PAGES === 'true' ? '/vite-press-ltf/' : '/';
 const vitePressConfigs = ({
   // Base path used when the site is deployed to a sub-path (GitHub Pages, etc.)
   base: BASE_PATH,
