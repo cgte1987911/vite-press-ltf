@@ -9,7 +9,7 @@ const BASE_PATH = process.env.GITHUB_PAGES === 'true' ? '/vite-press-ltf/' : '/'
 const vitePressConfigs = ({
   // Base path used when the site is deployed to a sub-path (GitHub Pages, etc.)
   base: BASE_PATH,
-  title: "My Awesome Project",
+  title: "dreaming dreamer",
   description: "A VitePress Site",
   markdown: {
     lineNumbers: true, // 启用行号
