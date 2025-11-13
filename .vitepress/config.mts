@@ -2,6 +2,7 @@
 // https://vitepress.dev/reference/site-config
 import { defineConfig } from "vitepress";
 import { withSidebar } from 'vitepress-sidebar';
+import mathjax3 from 'markdown-it-mathjax3'
 
 // Configure base path for deployment
 // Change this to your deployment path, e.g., '/vite-press-ltf/' for GitHub Pages
@@ -13,8 +14,20 @@ const vitePressConfigs = ({
   description: "A VitePress Site",
   markdown: {
     lineNumbers: true, // 启用行号
+    config: (md: { use: (arg0: any) => void; }) => {
+      // 使用 markdown-it-mathjax3
+      md.use(mathjax3);
+      
+      // 或者使用 markdown-it-katex
+      // const katex = require('markdown-it-katex');
+      // md.use(katex);
+    }
   },
   themeConfig: {
+    outline: {
+      level: [2, 6],
+      label: '本页目录'
+    },
     search: {
       provider: "local",
     },
@@ -40,8 +53,8 @@ export default defineConfig(
     // followSymlinks: false,
     //
     // ============ [ GROUPING ] ============
-    // collapsed: true,
-    // collapseDepth: 2,
+     collapsed: true,
+     collapseDepth: 3,
     // rootGroupText: 'Contents',
     // rootGroupLink: 'https://github.com/jooy2',
     // rootGroupCollapsed: false,

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "人的梦想是不会终结的"
+  name: "人的梦想是永远都不会终结的"
   text: "My collection"
   tagline: A man's dream will never die!
   actions:

@@ -11,3 +11,40 @@
   width: 0;
   height: 8px;
 }
+/* .vitepress/theme/style.css */
+:root {
+  /* 调整内容区域宽度 */
+  --vp-layout-max-width: 100% !important;
+}
+
+/* 主内容区域 */
+.container {
+  max-width: 100% !important;
+}
+
+/* 文章内容区域 */
+.vp-doc {
+  max-width: 100% !important;
+}
+
+/* 调整内容容器的 padding */
+.main {
+  padding: 0 64px !important;
+  .heading{
+      align-items: center;
+
+    .name{
+      max-width: none !important;
+    }
+  }
+  .tagline{margin:0 auto;text-align: center;}
+  .actions{
+    justify-content: center;
+  }
+}
+
+/* 如果需要更精确的控制 */
+.content-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}

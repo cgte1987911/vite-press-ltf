@@ -1290,56 +1290,55 @@ let str2:String=new String('123')
 ### 数学公式
 
 1. 分数
-
-   - $ \frac{a}{b} = c $
-
-     
+   - $\frac{a}{b} = c$
 
 2. 极限：
-
-   - $ \lim_{x \to a} f(x) = L $
+   - $\lim_{x \to a} f(x) = L$
 
 3. 导数
-
-   - $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} $
+   - $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
 4. 积分
-
-   - $\int_a^b f(x)\,dx = F(b) - F(a) $
+   - $\int_a^b f(x)\,dx = F(b) - F(a)$
 
 5. 概率
-
    - 贝叶斯定理
-     - $P(A|B) = \frac{P(B|A)P(A)}{P(B)} $
+     - $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$
    - 期望值
-     - E(X) = \sum_{i=1}^n x_i P(x_i) 
+     - $E(X) = \sum_{i=1}^n x_i P(x_i)$  ✅ 添加了 $ 符号
    - 方差
-     - $\text{Var}(X) = E[(X - E(X))^2] $
+     - $\text{Var}(X) = E[(X - E(X))^2]$
    - 正态分布
-     - $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2} $
+     - $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$
 
 6. 线性代数
 
    - 矩阵乘法
-     - $ (AB)_{ij} = \sum_{k=1}^n A_{ik}B_{kj} $
-   - 行列式
-     - $\text{det}(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)} $
+     - $(AB)_{ij} = \sum_{k=1}^n A_{ik}B_{kj}$
+
+   - 行列式定义
+     - $\text{det}(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}$
+
    - 特征值和特征向量
-     - Av = \lambda v 
+     - $A\mathbf{v} = \lambda \mathbf{v}$  ✅ 添加了 $ 符号和向量符号
+
    - 单位矩阵
-     - $AA^{-1} = A^{-1}A = I $
-   - 2*2矩阵
-     - $\begin{matrix} a & b \\ c & d \end{matrix} $
+     - $AA^{-1} = A^{-1}A = I$
+
+   - 2×2矩阵
+     - $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$  ✅ 使用 pmatrix 环境
+
    - 带括号矩阵
      - 带圆括号
        - $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
      - 带方括号
-       - $\begin{bmatrix} a & b \\ c & d \end{bmatrix} $
-   - 3*3矩阵
-     - $\begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix} $
-   - 行列式
-     - $\begin{vmatrix} a & b \\ c & d \end{vmatrix}$
+       - $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$
 
+   - 3×3矩阵
+     - $\begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{pmatrix}$
+
+   - 行列式计算
+     - $\begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$  ✅ 添加了计算结果
 
 
 
